@@ -2,9 +2,11 @@ package com.teleacad.spring.rest.service;
 
 import com.teleacad.spring.rest.model.Book;
 import com.teleacad.spring.rest.repository.BookRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class BookServiceImpl implements BookService{
 
     private final BookRepository bookRepository;
