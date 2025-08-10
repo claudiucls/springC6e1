@@ -26,8 +26,8 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
-    public int updateBook(int id) {
-        return bookRepository.updateBook(id);
+    public int updateBook(int id,Book newBook) {
+        return bookRepository.updateBook(id, newBook);
     }
 
     @Override

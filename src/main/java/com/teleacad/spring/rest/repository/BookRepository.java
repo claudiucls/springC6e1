@@ -9,7 +9,7 @@ public interface BookRepository {
 
     List<Book> getBooks();
     int addBook(Book book);
-    int updateBook(int id);
+    int updateBook(int id, Book newBook);
     int deleteBook(int id);
 
 }

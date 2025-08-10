@@ -29,9 +29,9 @@ public class BookRepositoryImp implements BookRepository{
     }
 
     @Override
-    public int updateBook(int id) {
+    public int updateBook(int id, Book newBook) {
         String sql = "UPDATE books SET title = ?, price = ? WHERE id = ?";
-        return jdbcTemplate.update(sql, id);
+        return jdbcTemplate.update(sql, newBook.getTitle(), newBook.getPrice(), id);
     }
 
     @Override
